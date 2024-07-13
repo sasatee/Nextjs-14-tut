@@ -1,0 +1,10 @@
+npm i prisma --save-dev
+npx prisma init --datasource-provider sqlite/mongodb
+npx prisma migrate dev --name firstMigration
+
+KINDE_CLIENT_ID=56c877109c6e49199ec3577c427b04fc
+KINDE_CLIENT_SECRET=nZkjxWZbbFnJovgxdTevM4V6UcUaqv8SYwqHT1Did1AfFRiiK
+KINDE_ISSUER_URL=https://realestatenextjs.kinde.com
+KINDE_SITE_URL=http://localhost:3001
+KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3001
+KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3001/api/auth/success
